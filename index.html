@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+        integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.JPG">
+    <title>Everest</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img src="./assets/img/logo.png" alt="" style="width: 125px;"></a>
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" style="margin: 0%;">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About Us</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="help.html" class="nav__link">Help</a>
+                    </li>
+                </ul>
+
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Contact button -->
+                <a href="contact.html"><i class="ri-user-line nav__login" id="login-btn"></i></a>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Search..." class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close" style="color: black;"></i>
+    </div>
+
+    <!--==================== SLIDER ====================-->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" style="top: 110px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="./assets/img/water1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4">
+                    <h1 class="display-1 fw-bolder text-capitalize">Premium Jar Water At Your Door Step</h1>
+                    <a href="./shop.html"><button class="btn btn-primary px-4 py-2 fs-5 mt-5">Order Now</button></a>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="./assets/img/water2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="display-1 fw-bolder text-capitalize">Easy Order From Aqua World App</p>
+                    <a href="./shop.html"><button class="btn btn-primary px-4 py-2 fs-5 mt-5">Order Now</button></a>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="./assets/img/water3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="display-1 fw-bolder text-capitalize">Maximum Purity</p>
+                    <a href="./shop.html"><button class="btn btn-primary px-4 py-2 fs-5 mt-5">Order Now</button></a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Blog 1-->
+
+    <section class="s_title o_colored_level pt64 pb0" data-vcss="001" data-snippet="s_title" data-name="Title"
+        style="background-image: none; margin-top: 80px;">
+        <div class="s_allow_columns container">
+            <p><br /></p>
+            <h1 style="text-align: center; margin: 70px 0; color: var(--first-color);"><strong>A Trusted Name In Bottled
+                    Jar Water Industry</strong>
+            </h1>
+        </div>
+    </section>
+    <section class="s_showcase pt48 o_colored_level pb0" data-vcss="002" data-snippet="s_showcase" data-name="Showcase"
+        style="background-image: none;">
+        <div class="container">
+            <div class="row g-0 s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
+                <div class="col-lg text-lg-end">
+                    <div class="row">
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Convenient at Your Finger
+                                        Tips</span>
+                                </h3>
+                                <h3 class="o_default_snippet_text"><br /></h3>
+                            </div>
+                            <p class="o_default_snippet_text">With just a few taps, you can <a
+                                    href="./shop.html">place</a> an
+                                order for our premium bottled
+                                water, jar water, and more. Say goodbye to the hassle of phone calls and
+                                paperwork.<br /></p>
+                        </div>
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Quality You Can
+                                        Trust</span><br />
+                                </h3>
+                                <h3 class="o_default_snippet_text"><br /></h3>
+                            </div>
+                            <p class="o_default_snippet_text">Our commitment to quality is unwavering. We consistently
+                                invest in the
+                                latest purification technology to ensure that our Jar Water meets and
+                                exceeds industry standards. <br /></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="w-50 h-100 border-end"></div>
+                </div>
+                <div class="col-lg">
+                    <div class="row">
+
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Unique Ozone Mixing
+                                        Technology</span>
+                                </h3>
+                                <h3 class="o_default_snippet_text">
+                                    <span class="text-o-color-1">​</span>
+                                </h3>
+                            </div>
+                            <p class="o_default_snippet_text">Water is ozonated with our unique ozone mixing technology
+                                and bottles
+                                and Jars are sanitized with hyper ozonation contact point.&nbsp;</p>
+                        </div>
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Top Notch Filtration</span>
+                                </h3>
+                                <h3>
+                                    <span class="text-o-color-1">​</span><br />
+                                </h3>
+                                <h3 class="o_default_snippet_text">
+                                    <span class="text-o-color-1">​</span>
+                                </h3>
+                            </div>
+                            <p class="o_default_snippet_text">We use the latest sophisticated technologies like Reverse
+                                osmosis, U.V.
+                                and Ozone to provide the best quality water for you and your family..&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-lg-center">
+            <p><br /></p>
+            <a href="#" class="o_default_snippet_text">​</a>
+        </div>
+    </section>
+
+    <!-- Product Slider -->
+
+    <section class="product">
+        <h2 class="product-category"><strong>Quality Products at Affordable Prices</strong></h2>
+        <button class="pre-btn"><img src="./assets/img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="./assets/img/arrow.png" alt=""></button>
+        <div class="product-container">
+            <a href="./product-jar.html">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./assets/img/water jar.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Aqua World Jar Water(19 Liter)</h2>
+                        <span class="price">80.00 Rs</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="product-card">
+                <a href="./product-container.html">
+                    <div class="product-image">
+                        <img src="./assets/img/water jar 2.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Container Deposit</h2>
+                        <span class="price">300 Rs</span>
+                    </div>
+            </div></a>
+
+
+            <div class="product-card">
+                <a href="./product-dispenser.html">
+                    <div class="product-image">
+                        <img src="./assets/img/water dispenser.png" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Dispenser</h2>
+                        <span class="price">350 Rs</span>
+                    </div>
+            </div></a>
+
+
+            <div class="product-card">
+                <a href="./product-water-900ml.html">
+                    <div class="product-image">
+                        <img src="./assets/img/water jar.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Aqua World 900 ml Bottled Water - 12 Count</h2>
+                        <span class="price">300 Rs</span>
+                    </div>
+            </div></a>
+
+
+            <div class="product-card">
+                <a href="./product-water-500ml.html">
+                    <div class="product-image">
+                        <img src="./assets/img/water jar.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Aqua World 500 ml Bottled Water - 12 Count</h2>
+                        <span class="price">285 Rs</span>
+                    </div>
+            </div></a>
+
+
+            <div class="product-card">
+                <a href="./product-water-15count.html">
+                    <div class="product-image">
+                        <img src="./assets/img/water jar.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Aqua World 300 ml Bottled Water - 15 Count</h2>
+                        <span class="price">250 Rs</span>
+                    </div>
+            </div></a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="s_text_image o_colored_level o_cc o_cc4 pb0 pt8" data-snippet="s_image_text"
+        data-name="Image - Text" style="background-image: none; background-color: #05acff; padding-top: 20px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pt16 o_colored_level pb0">
+                    <img src="https://aquaworld.com.np/web/image/763-bec8e366/water-guy.webp"
+                        alt="aqua world water delivery boy" class="img img-fluid mx-auto o_we_custom_image"
+                        data-mimetype="image/webp" data-original-id="762"
+                        data-original-src="/web/image/762-bcac23e5/water-guy.png"
+                        data-mimetype-before-conversion="image/png" data-resize-width="343" loading="lazy" />
+                </div>
+                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                    <h2 class="o_default_snippet_text"><strong style="color: white;">We Deliver Products At Your
+                            Doorstep</strong><br /></h2>
+                    <p class="o_default_snippet_text" style="color: white;">We deliver products and services at your
+                        doorstep within 24 hours regardless of where you live.<br /></p>
+                    <p><a href="./shop.html" class="btn btn-custom text-o-color-4 bg-o-color-2"
+                            data-bs-original-title="" title=""
+                            style="border-width: 1px; border-style: solid; background-color: var(--first-color); color: white;"
+                            aria-describedby="popover132385">Place Your Order</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog 2 -->
+
+    <section class="s_title o_colored_level pt64 pb0" data-vcss="001" data-snippet="s_title" data-name="Title"
+        style="background-image: none;">
+        <div class="s_allow_columns container">
+            <p><br /></p>
+            <h1 style="text-align: center; margin: 70px 0; color: var(--first-color);"><strong>Purest Water Till Last
+                    Drop</strong>
+            </h1>
+        </div>
+    </section>
+    <section class="s_showcase pt48 o_colored_level pb0" data-vcss="002" data-snippet="s_showcase" data-name="Showcase"
+        style="background-image: none;">
+        <div class="container">
+            <div class="row g-0 s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
+                <div class="col-lg text-lg-end">
+                    <div class="row">
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Maximum Purity</span>
+                                </h3>
+                                <h3 class="o_default_snippet_text"><br /></h3>
+                            </div>
+                            <p class="o_default_snippet_text">4.5mg of magnesium will be required to purify every
+                                litter.<br /></p>
+                        </div>
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Chloride 350a mg/L</span><br />
+                                </h3>
+                                <h3 class="o_default_snippet_text"><br /></h3>
+                            </div>
+                            <p class="o_default_snippet_text">To purify water give 35oa mg chlorine for every litter of
+                                water.<br /></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="w-50 h-100 border-end"></div>
+                </div>
+                <div class="col-lg">
+                    <div class="row">
+
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Fluoride 0.5 mg/L</span>
+                                </h3>
+                                <h3 class="o_default_snippet_text">
+                                    <span class="text-o-color-1">​</span>
+                                </h3>
+                            </div>
+                            <p class="o_default_snippet_text">0.5mg fluoride is needed to purify 1 litter of
+                                water.&nbsp;</p>
+                        </div>
+                        <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                            <div class="s_showcase_title d-flex mb-2">
+
+                                <h3>
+                                    <span class="text-o-color-1" style="color: #05acff;">Potassium 2.5 mg/L</span>
+                                </h3>
+                                <h3>
+                                    <span class="text-o-color-1">​</span><br />
+                                </h3>
+                                <h3 class="o_default_snippet_text">
+                                    <span class="text-o-color-1">​</span>
+                                </h3>
+                            </div>
+                            <p class="o_default_snippet_text">To purify water 2.5mg potassium is needed for every
+                                litter.&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-lg-center">
+            <p><br /></p>
+            <a href="#" class="o_default_snippet_text">​</a>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+
+    <main class="testimonial" style="color: white; margin-bottom: -30px;">
+        <div class="testimonial-container" style="background-image: url('https://images.pexels.com/photos/449018/pexels-photo-449018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+            <div class="testimonial-contents-wraper">
+
+                <section class="testimonial-header"><h1>Testimonial</h1></section>
+
+                <section class="testRow">
+
+                    <div class="testItem active">
+                        <h3>Pratikshya Silwal</h3>
+                        <h4>Admin Department of Neology Next Pvt.Ltd</h4>
+                        <p>We have been very happy customers of aqua world private limited since 2019. They are the best quality water suppliers we have come across inside Kathmandu valley. The jars are always in best shape and deliveries are also quick.</p>
+                    </div>
+
+                    <div class="testItem">
+                        <h3>Nirmal Pradhan</h3>
+                        <h4>Admin Department of InfoDevelopers Pvt Ltd</h4>
+                        <p>Aqua World provides you with the best quality of drinking water, as we've been using it Since 2017. The uttermost quality of the product supplied, has not only been used inside our company, but has also been part of our regular househol</p>
+                    </div>
+
+                    <div class="testItem">
+                        <h3>Manish Lama</h3>
+                        <h4>Director of Software Shark Tech</h4>
+                        <p>Aqua World has provided us very easy to use applications on Web, Android and IOS. These people are best in service and quality as well. For us, Aqua World is the best jar water supplier in town and also recommend everyone to use their service.</p>
+                    </div>
+
+                    <div class="testItem">
+                        <h3>Junu Lama</h3>
+                        <h4>CEO of GeoTrack</h4>
+                        <p>Water should be of topmost quality to ensure we have a sound health. And for that Aqua World Has been our go to supplier. Their water is of top notch level and the jar that comes is always clean and new. We are happy to be associated with Aqua World. </p>
+                    </div>
+
+                </section>
+
+                <section class="indicators">
+                    <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='1' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='2' onclick="switchTest(this)"></div>
+                    <div class="dot" attr='3' onclick="switchTest(this)"></div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify" style="color: white;">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a
+                        galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Connect With Us</h6>
+                    <ul class="footer-links ">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">info@aquaworld.com.np</a></li>
+                        <li><a href="#">977-015223028 , +977-9851318038</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="small">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-12">
+                    <p class="copyright-text">Copyright © Aquaworld Pvt. Ltd All Rights Reserved by
+                        <a href="#"><span class="logo">Pravidhi Enterprise.</span></a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="bx bxl-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js">
+    </script>
+    <script src="./assets/js/blog.js"></script>
+    <script type="text/javascript">
+
+        // Access the testimonials
+        let testSlide = document.querySelectorAll('.testItem');
+        // Access the indicators
+        let dots = document.querySelectorAll('.dot');
+
+        var counter = 0;
+
+        // Add click event to the indicators
+        function switchTest(currentTest) {
+            currentTest.classList.add('active');
+            var testId = currentTest.getAttribute('attr');
+            if (testId > counter) {
+                testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+                counter = testId;
+                testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+            }
+            else if (testId == counter) { return; }
+            else {
+                testSlide[counter].style.animation = 'prev1 0.5s ease-in forwards';
+                counter = testId;
+                testSlide[counter].style.animation = 'prev2 0.5s ease-in forwards';
+            }
+            indicators();
+        }
+
+        // Add and remove active class from the indicators
+        function indicators() {
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            dots[counter].className += ' active';
+        }
+
+        // Code for auto sliding
+        function slideNext() {
+            testSlide[counter].style.animation = 'next1 2s ease-in forwards';
+            if (counter >= testSlide.length - 1) {
+                counter = 0;
+            }
+            else {
+                counter++;
+            }
+            testSlide[counter].style.animation = 'next2 2s ease-in forwards';
+            indicators();
+        }
+        function autoSliding() {
+            deleteInterval = setInterval(timer, 5000);
+            function timer() {
+                slideNext();
+                indicators();
+            }
+        }
+        autoSliding();
+
+        // Stop auto sliding when mouse is over the indicators
+        const container = document.querySelector('.indicators');
+        container.addEventListener('mouseover', pause);
+        function pause() {
+            clearInterval(deleteInterval);
+        }
+
+        // Resume sliding when mouse is out of the indicators
+        container.addEventListener('mouseout', autoSliding);
+
+    </script>
+</body>
+
+</html>
