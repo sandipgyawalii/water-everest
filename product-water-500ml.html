@@ -30,7 +30,18 @@
 
 <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <section>
+        <div class="top-navbar" >
+            <div class="top-nav-links" style="text-align: end;">
+                <ul style="margin: 0; padding: 0;">
+                    <button class="top-button"><a href="#">My Cart</a></button>
+                    <button class="top-button"><a href="#">Sign in</a></button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <header class="header sticky-top" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo"><img src="./assets/img/logo.png" alt="" style="width: 125px;"></a>
 
@@ -97,6 +108,13 @@
 
     <!-- Product 1 Jar -->
 
+    <!-- Search -->
+
+    <form class="example" action="#" style="padding-top: 40px; display: flex;padding-left: 300px;">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class='bx bx-search'></i></button>
+    </form>
+
     <div class = "card-wrapper">
         <div class = "card" style="border: none;">
           <!-- card left -->
@@ -109,6 +127,7 @@
           </div>
           <!-- card right -->
           <div class = "product-content">
+            <p><a href="shop.html">All Products </a>/ AQUA WORLD 500 ML BOTTLED WATER - 12 COUNT</p>
             <h2 class = "product-title">AQUA WORLD 500 ML BOTTLED WATER - 12 COUNT</h2>
             <p>Aqua World 19 liter jar water processed through multiple stages</p>
   
@@ -122,12 +141,17 @@
             </div>
   
             <div class = "purchase-info">
-              <input type = "number" min = "0" value = "1">
+                <div class="number">
+                    <span class="minus">-</span>
+                    <input type="text" class="product-amount" value="1"/>
+                    <span class="plus">+</span>
+                </div>
               <button type = "button" class = "btn">
                 Add to Cart <i class = "fas fa-shopping-cart"></i>
               </button>
             </div>
 
+            <a href="terms.html">Terms and Conditions</a>
             <p style="margin: 0; font-size: 14px;">30-day money-back guarantee</p>
             <p style="font-size: 14px;">Shipping: 2-3 Business Days</p>
   
@@ -141,12 +165,6 @@
               </a>
               <a href = "#">
                 <i class = "fab fa-instagram"></i>
-              </a>
-              <a href = "#">
-                <i class = "fab fa-whatsapp"></i>
-              </a>
-              <a href = "#">
-                <i class = "fab fa-pinterest"></i>
               </a>
             </div>
           </div>
@@ -241,19 +259,17 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <h6>About</h6>
-                    <p class="text-justify" style="color: white;">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a
-                        galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="text-justify" style="color: white;">At Everest Aquadrop Pvt. Ltd., we are dedicated to harnessing the transformative power of pure water to enhance lives and promote well-being. Since our establishment in 2010 in Kathmandu, Nepal, Everest Aquadrop has become synonymous with reliable, safe, and convenient hydration solutions. Our journey reflects our steadfast dedication to quality, sustainability, and ensuring the satisfaction of our esteemed customers.
+
+                    </p>
                 </div>
                 <div class="col-6 col-md-3">
                     <h6>Connect With Us</h6>
                     <ul class="footer-links ">
                         <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">info@aquaworld.com.np</a></li>
-                        <li><a href="#">977-015223028 , +977-9851318038</a></li>
-                    </ul>
+                        <li><a href="#">info@everestaqua.com</a></li>
+                        <li><a href="#">9851022810</a></li>
+                     </ul>
                 </div>
                 <div class="col-6 col-md-3">
                     <h6>Quick Links</h6>
@@ -270,7 +286,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-12">
-                    <p class="copyright-text">Copyright © Aquaworld Pvt. Ltd All Rights Reserved by
+                    <p class="copyright-text">Copyright © Everest Aquadrop Pvt. Ltd All Rights Reserved by
                         <a href="#"><span class="logo">Pravidhi Enterprise.</span></a>
                     </p>
                 </div>
@@ -290,6 +306,7 @@
     <script src="assets/js/main.js">
     </script>
     <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/product.js"></script>
 </body>
 
 </html>

@@ -126,10 +126,34 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.top-navbar{
+  padding: 0 100px;
+  font-size: 15px;
+  border: solid;
+  border-color: white white #f2f2f2 white;
+  border-width: 2px;
+}
+
+.top-button{
+  padding: 0.6rem 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.top-button a{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: var(--title-color);
+  display: block;
+}
+
+.top-button:hover{
+  background-color: #f2f2f2;
+}
+
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
@@ -354,7 +378,7 @@ img {
   .nav__list {
     flex-direction: row;
     column-gap: 3rem;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .login__form {
@@ -415,6 +439,7 @@ img {
   width: 250px;
   height: 450px;
   margin-right: 40px;
+  background-color: white;
 }
 
 .product-image {
@@ -445,7 +470,7 @@ img {
 .product-info {
   width: 100%;
   height: 100px;
-  padding-top: 10px;
+  padding:0 10px;
 }
 
 .product-brand {
